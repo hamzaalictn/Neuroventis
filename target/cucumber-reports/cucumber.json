@@ -1,0 +1,159 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-03T19:31:45.882Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2839071000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login to Add Seizure functionality",
+        "description": "",
+        "id": "check-the-add-seizure-feature;login-to-add-seizure-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 93578000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5167798000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 443051000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User logs in",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2164115000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Home page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86823000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to Manage Seizure page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 990000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on \"Add\" to display Add functionalities",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_clicks_on_to_display_Add_functionalities(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 669000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Add functionalities displayed \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"true\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.add_functionalities_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-03T19:31:56.756Z",
+        "line": 11,
+        "name": "",
+        "description": "",
+        "id": "check-the-add-seizure-feature;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Check the Add Seizure feature",
+    "description": "",
+    "id": "check-the-add-seizure-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/addSeizure.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
