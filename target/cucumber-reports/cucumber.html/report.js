@@ -5,10 +5,10 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@dataDriven"
+      "name": "@smoke"
     },
     {
-      "name": "@smoke"
+      "name": "@dataDriven"
     }
   ]
 });
@@ -59,30 +59,6 @@ formatter.examples({
         "Focal aware seizure",
         "Yes"
       ]
-    },
-    {
-      "cells": [
-        "Generalized motor seizure",
-        "Yes"
-      ]
-    },
-    {
-      "cells": [
-        "Focal aware seizure",
-        "Yes"
-      ]
-    },
-    {
-      "cells": [
-        "Focal impaired awareness seizure",
-        "No"
-      ]
-    },
-    {
-      "cells": [
-        "Other Myoclonic seizures",
-        "Yes"
-      ]
     }
   ]
 });
@@ -130,10 +106,10 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@dataDriven"
+      "name": "@smoke"
     },
     {
-      "name": "@smoke"
+      "name": "@dataDriven"
     }
   ]
 });
@@ -234,10 +210,10 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@dataDriven"
+      "name": "@smoke"
     },
     {
-      "name": "@smoke"
+      "name": "@dataDriven"
     }
   ]
 });
@@ -287,499 +263,6 @@ formatter.step({
 });
 formatter.match({
   "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User logs in",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User navigates to Home page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Adding Seizures",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@dataDriven"
-    },
-    {
-      "name": "@smoke"
-    }
-  ]
-});
-formatter.step({
-  "name": "User navigates to Manage Seizure page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User selects type of Seizure \"Generalized motor seizure\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User selects felt it coming \"Yes\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Save seizure",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Seizure successfully added displayed true",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User logs in",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User navigates to Home page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Adding Seizures",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@dataDriven"
-    },
-    {
-      "name": "@smoke"
-    }
-  ]
-});
-formatter.step({
-  "name": "User navigates to Manage Seizure page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User selects type of Seizure \"Focal aware seizure\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User selects felt it coming \"Yes\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Save seizure",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Seizure successfully added displayed true",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User logs in",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User navigates to Home page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Adding Seizures",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@dataDriven"
-    },
-    {
-      "name": "@smoke"
-    }
-  ]
-});
-formatter.step({
-  "name": "User navigates to Manage Seizure page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User selects type of Seizure \"Focal impaired awareness seizure\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User selects felt it coming \"No\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Save seizure",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Seizure successfully added displayed true",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User logs in",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User navigates to Home page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Adding Seizures",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@dataDriven"
-    },
-    {
-      "name": "@smoke"
-    }
-  ]
-});
-formatter.step({
-  "name": "User navigates to Manage Seizure page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User selects type of Seizure \"Other Myoclonic seizures\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User selects felt it coming \"Yes\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Save seizure",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Seizure successfully added displayed true",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User logs in",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User navigates to Home page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "User edits existing Seizure data",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@dataDriven"
-    },
-    {
-      "name": "@smoke"
-    },
-    {
-      "name": "@deleteAllAddedSeizure"
-    }
-  ]
-});
-formatter.step({
-  "name": "User navigates to Journal and select existing first existing Seizure",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_navigates_to_Journal_and_select_existing_first_existing_Seizure()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User deletes first existing Seizure until all Seizure deleted",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_deletes_first_existing_Seizure_until_all_Seizure_deleted()"
 });
 formatter.result({
   "status": "passed"
@@ -795,6 +278,9 @@ formatter.feature({
   "tags": [
     {
       "name": "@smoke"
+    },
+    {
+      "name": "@add"
     }
   ]
 });
@@ -843,6 +329,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@smoke"
+    },
+    {
+      "name": "@add"
     },
     {
       "name": "@login"
@@ -911,12 +400,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Warning pupop test",
+  "name": "Add Seizure functionality Warning popup test",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
       "name": "@smoke"
+    },
+    {
+      "name": "@add"
     },
     {
       "name": "@negatif"
@@ -945,7 +437,7 @@ formatter.result({
 });
 formatter.step({
   "name": "User selects felt it coming \"Yes\"",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.match({
   "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
@@ -1021,6 +513,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@smoke"
+    },
+    {
+      "name": "@add"
     }
   ]
 });
@@ -1035,7 +530,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User selects type of Seizure \"Focal aware seizure\"",
+  "name": "User selects type of Seizure \"Focal impaired awareness seizure\"",
   "keyword": "When "
 });
 formatter.match({
@@ -1116,12 +611,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Generalized motor seizure",
+  "name": "Generalized motor seizure added and deleted",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
       "name": "@smoke"
+    },
+    {
+      "name": "@add"
     }
   ]
 });
@@ -1186,6 +684,9 @@ formatter.feature({
   "tags": [
     {
       "name": "@smoke"
+    },
+    {
+      "name": "@edit"
     }
   ]
 });
@@ -1226,16 +727,6 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
-});
-formatter.scenario({
-  "name": "User edits existing Seizure data",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@smoke"
-    }
-  ]
 });
 formatter.step({
   "name": "User navigates to Manage Seizure page",
@@ -1287,6 +778,19 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "User edits existing Seizure data and adds durations time",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@edit"
+    }
+  ]
+});
 formatter.step({
   "name": "User navigates to Journal and select existing first existing Seizure",
   "keyword": "When "
@@ -1318,11 +822,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User saves changes and should be recorded",
+  "name": "User Save seizure",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_saves_changes_and_should_be_recorded()"
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
 });
 formatter.result({
   "status": "passed"
@@ -1368,13 +872,69 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "User navigates to Manage Seizure page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects type of Seizure \"Generalized absence seizure\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects felt it coming \"No\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Save seizure",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Seizure successfully added displayed true",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
-  "name": "User edits existing Seizure data",
+  "name": "User edits existing Seizure data and adds a trigger option",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
       "name": "@smoke"
+    },
+    {
+      "name": "@edit"
+    },
+    {
+      "name": "@trigger"
     }
   ]
 });
@@ -1389,8 +949,165 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User deletes first existing Seizure",
+  "name": "User selects Triggers section and adds \"Stress\" as Trigger",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_selects_Triggers_section_and_adds_as_Trigger(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Save seizure",
   "keyword": "Then "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is on the login page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User navigates to Home page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User navigates to Manage Seizure page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects type of Seizure \"Generalized absence seizure\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects felt it coming \"No\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Save seizure",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Seizure successfully added displayed true",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User edits existing Seizure data and adds a Emergency medications option",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@edit"
+    },
+    {
+      "name": "@medication"
+    }
+  ]
+});
+formatter.step({
+  "name": "User navigates to Journal and select existing first existing Seizure",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_navigates_to_Journal_and_select_existing_first_existing_Seizure()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects Emergency medications section and adds \"Clobazam\" as used Medication",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_selects_Emergency_medications_section_and_adds_as_used_Medication(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Save seizure",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User deletes first existing Seizure",
+  "keyword": "And "
 });
 formatter.match({
   "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_deletes_first_existing_Seizure()"
@@ -1439,32 +1156,259 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "User deletes existing seizure",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@smoke"
-    }
-  ]
-});
 formatter.step({
-  "name": "User navigates to Journal and delete existing seizures",
-  "keyword": "When "
+  "name": "User navigates to Manage Seizure page",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_navigates_to_Journal_and_delete_existing_seizures()"
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User move to HomePage",
+  "name": "User selects type of Seizure \"Generalized absence seizure\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects felt it coming \"No\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Save seizure",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Seizure successfully added displayed true",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User edits existing Seizure adds a Emergency medications option and adds a trigger option",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@edit"
+    }
+  ]
+});
+formatter.step({
+  "name": "User navigates to Journal and select existing first existing Seizure",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_navigates_to_Journal_and_select_existing_first_existing_Seizure()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects Emergency medications section and adds \"Clobazam\" as used Medication",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_selects_Emergency_medications_section_and_adds_as_used_Medication(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects Triggers section and adds \"Stress\" as Trigger",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_selects_Triggers_section_and_adds_as_Trigger(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Save seizure",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_move_to_HomePage()"
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is on the login page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User navigates to Home page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User navigates to Manage Seizure page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects type of Seizure \"Generalized absence seizure\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects felt it coming \"No\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Save seizure",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Seizure successfully added displayed true",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User edits existing Seizure adds a Emergency medications option and adds a trigger option and deletes it",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@edit"
+    }
+  ]
+});
+formatter.step({
+  "name": "User navigates to Journal and select existing first existing Seizure",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_navigates_to_Journal_and_select_existing_first_existing_Seizure()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects Emergency medications section and adds \"Clobazam\" as used Medication",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_selects_Emergency_medications_section_and_adds_as_used_Medication(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects Triggers section and adds \"Stress\" as Trigger",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_selects_Triggers_section_and_adds_as_Trigger(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Save seizure",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User deletes first existing Seizure",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_deletes_first_existing_Seizure()"
 });
 formatter.result({
   "status": "passed"

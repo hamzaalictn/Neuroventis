@@ -1,0 +1,16 @@
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/pages/BasePage.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/utilities/ui/BrowserUtils.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/step_definitions/AddSeizureStepDefs.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/runners/CukesRunner.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/pages/LoginPage.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/pages/JournalPage.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/utilities/ui/Pages.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/pages/WelcomePage.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/step_definitions/Hooks.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/utilities/ui/Driver.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/step_definitions/EditSeizureStepDefs.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/pages/TutorialPage.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/utilities/ui/ConfigurationReader.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/pages/HomePage.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/step_definitions/BaseStep.java
+/Users/hamzaalicetin/Desktop/Neuroventis/src/test/java/com/neuroventis/helpilepsy/pages/ManageSeizurePage.java

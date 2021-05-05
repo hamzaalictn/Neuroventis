@@ -1,5 +1,6 @@
 package com.neuroventis.helpilepsy.step_definitions;
 
+import com.neuroventis.helpilepsy.utilities.ui.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -28,16 +29,12 @@ public class EditSeizureStepDefs extends BaseStep{
     public void user_defines_the_duration_as_minute_and_seconds(Integer int1, Integer int2) {
         pages.manageSeizurePage().defineDurationTime(int1,int2);
     }
-    @Then("User saves changes and should be recorded")
-    public void user_saves_changes_and_should_be_recorded() {
-        pages.manageSeizurePage().saveSeizure();
-    }
 
     @Then("User deletes first existing Seizure")
     public void user_deletes_first_existing_Seizure() {
-        pages.journalPage().deleteFirstAddedSeizureFromJournal();
+        pages.journalPage().selectFirstAddedSeizureForEdit();
+        BrowserUtils.wait(3);
         pages.manageSeizurePage().deleteSeizure();
-
     }
 
     @Then("User deletes first existing Seizure until all Seizure deleted")
@@ -48,24 +45,31 @@ public class EditSeizureStepDefs extends BaseStep{
             pages.journalPage().deleteFirstAddedSeizureFromJournal();
             pages.manageSeizurePage().deleteSeizure();
         }
+    }
 
+    @When("User selects Triggers section")
+    public void user_selects_Triggers_section() {
+
+
+    }
+    @When("User selects Triggers section and adds {string} as Trigger")
+    public void user_selects_Triggers_section_and_adds_as_Trigger(String string) {
+        pages.manageSeizurePage().selectTriggerSection();
+        pages.manageSeizurePage().addTrigger(string);
+    }
+
+    @Then("Seizure successfully editted  true")
+    public void seizure_successfully_editted_true() {
+        BrowserUtils.switchToWindow("https://d2ziclbl1px5mc.cloudfront.net/#!/dashboard");
+    }
+
+    @When("User selects Emergency medications section and adds {string} as used Medication")
+    public void user_selects_Emergency_medications_section_and_adds_as_used_Medication(String string) {
+        pages.manageSeizurePage().selectEmergencyMedicationsUsedSection();
+        pages.manageSeizurePage().addUsedEmergencyMedication(string);
     }
 
 
-    @When("User edit existing")
-    public void user_edit_existing() {
-
-    }
-
-    @When("User navigates to Journal and delete existing seizures")
-    public void user_navigates_to_Journal_and_delete_existing_seizures() {
-
-    }
-
-    @Then("User move to HomePage")
-    public void user_move_to_HomePage() {
-
-    }
 
 
 

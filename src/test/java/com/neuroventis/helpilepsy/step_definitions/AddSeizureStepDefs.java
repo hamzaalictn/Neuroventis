@@ -79,6 +79,7 @@ public class AddSeizureStepDefs extends BaseStep {
     public void seizure_successfully_added_displayed_true() {
         Assert.assertTrue(pages.manageSeizurePage().saveSeizureInfo());
         pages.manageSeizurePage().endSaveSeizureProcess();
+        BrowserUtils.switchToWindow("https://d2ziclbl1px5mc.cloudfront.net/#!/dashboard");
     }
 
 

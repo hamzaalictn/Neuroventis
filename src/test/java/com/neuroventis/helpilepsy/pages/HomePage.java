@@ -37,8 +37,6 @@ public class HomePage extends BasePage{
     private WebElement settingsButton;
 
 
-
-
     public String getCurrentUrl() {
         return driver.getCurrentUrl();
     }
@@ -56,5 +54,6 @@ public class HomePage extends BasePage{
         BrowserUtils.wait(1);
         wait.until(ExpectedConditions.elementToBeClickable(JournalButton));
         JournalButton.click();
+        BrowserUtils.wait(2);
     }
 }

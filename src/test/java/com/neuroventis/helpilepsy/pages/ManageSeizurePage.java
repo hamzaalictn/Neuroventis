@@ -30,10 +30,10 @@ public class ManageSeizurePage extends BasePage {
     @FindBy(xpath = "//div[@class='addButton btn btn-helpilepsy ng-scope']")
     private WebElement addButton;
 
-    @FindBy(xpath = "//label[@for='felt_yes']")
+    @FindBy(xpath = "//label[@for='felt_yes']/parent::div")
     private WebElement feltItComingButtonYes;
 
-    @FindBy(xpath = "//label[@for='felt_no']")
+    @FindBy(xpath = "//label[@for='felt_no']/parent::div")
     private WebElement feltItComingButtonNo;
 
     //span[@nb-txt='events_content.seizure.save']
@@ -51,7 +51,7 @@ public class ManageSeizurePage extends BasePage {
     private WebElement saveSeizureInfo;
 
     @FindBy(xpath = "(//button[text()='Ok'])[1]")
-    private WebElement  saveSeizureOKbutton;
+    private WebElement saveSeizureOKbutton;
 
     @FindBy(xpath = "//div[@ng-click='manageSeizureType()']")
     private WebElement selectTypeButton;
@@ -77,8 +77,20 @@ public class ManageSeizurePage extends BasePage {
     @FindBy(xpath = "(//div[text()='Validate'])[1]")
     private WebElement defineTheDurationValidateButton;
 
+    @FindBy(xpath = "//i[text()='Triggers']/parent::div")
+    private WebElement triggerSectionButton;
 
+    @FindBy(xpath = "//div[contains(@ng-if,'emergency')]/parent::div")
+    private WebElement EmergencyMedicationSectionButton;
 
+    @FindBy(xpath = "//span[text()='Stress']/parent::span/parent::div")
+    private WebElement triggerStressButton;
+
+    @FindBy(xpath = "//span[text()='Validate']/parent::div")
+    private WebElement valideButton;
+
+    @FindBy(xpath = "//span[text()='Clobazam']/parent::span/parent::div")
+    private WebElement emergencyMedicationsClobazamButton;
 
 
     public void selectTypeOfSeizure(String str) {
@@ -125,6 +137,7 @@ public class ManageSeizurePage extends BasePage {
 
     public void saveSeizure() {
         saveSeizureButton.click();
+        BrowserUtils.wait(3);
     }
 
 
@@ -133,7 +146,6 @@ public class ManageSeizurePage extends BasePage {
     }
 
     public boolean isAddEventPupopDisplayed() {
-
         wait.until(ExpectedConditions.visibilityOf(addAnEventText));
         return addAnEventText.isDisplayed();
     }
@@ -145,19 +157,18 @@ public class ManageSeizurePage extends BasePage {
     }
 
     public void selectTypeOfSeizureNull() {
-        selectTypeButton.click();
-        selectTypeCloseButton.click();
-
+        BrowserUtils.wait(2);
     }
 
     public void endSaveSeizureProcess() {
         saveSeizureOKbutton.click();
+        BrowserUtils.wait(3);
     }
 
     public void defineDurationTime(Integer int1, Integer int2) {
         defineTheDurationButton.click();
-        defineTheDurationMinutesBox.sendKeys(int1+"");
-        defineTheDurationSecondsBox.sendKeys(int2+"");
+        defineTheDurationMinutesBox.sendKeys(int1 + "");
+        defineTheDurationSecondsBox.sendKeys(int2 + "");
         defineTheDurationValidateButton.click();
     }
 
@@ -167,5 +178,27 @@ public class ManageSeizurePage extends BasePage {
         deleteSeizureConfirmButton.click();
         BrowserUtils.wait(3);
 
+    }
+
+
+    public void selectTriggerSection() {
+        triggerSectionButton.click();
+    }
+
+    public void addTrigger(String string) {
+        if (string.equalsIgnoreCase("Stress"))
+            triggerStressButton.click();
+        valideButton.click();
+    }
+
+
+    public void selectEmergencyMedicationsUsedSection() {
+        EmergencyMedicationSectionButton.click();
+    }
+
+    public void addUsedEmergencyMedication(String string) {
+        if (string.equalsIgnoreCase("Clobazam"))
+            emergencyMedicationsClobazamButton.click();
+        valideButton.click();
     }
 }
