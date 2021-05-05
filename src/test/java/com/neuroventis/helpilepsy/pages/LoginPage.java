@@ -11,7 +11,7 @@ public class LoginPage extends BasePage {
     // /html/body/div[1]/div/div/div/div/div/div/div/form/div[2]/input
     // //input[@type='email']
 
-    @FindBy(xpath ="/html/body/div[1]/div/div/div/div/div/div/div/form/div[2]/input")
+    @FindBy(xpath ="//input[@type='email']")
     private WebElement userName;
 
     @FindBy(xpath ="//input[@type='password']")

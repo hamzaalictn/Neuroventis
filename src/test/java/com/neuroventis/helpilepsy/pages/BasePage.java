@@ -35,9 +35,10 @@ public abstract class  BasePage {
 
 
 
+
     public BasePage(){
         PageFactory.initElements(driver,this);
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(14, TimeUnit.SECONDS);
     }
     public void navigateTo(String component){
         String locator = "//a[text() = '" + component + "']";
@@ -58,5 +59,6 @@ public abstract class  BasePage {
     public void waitUntilSpinnerDisappear(){
         wait.until(ExpectedConditions.invisibilityOf(spinner));
     }
+
 
 }

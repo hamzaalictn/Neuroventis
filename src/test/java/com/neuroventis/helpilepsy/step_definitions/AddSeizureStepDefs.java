@@ -1,20 +1,21 @@
 package com.neuroventis.helpilepsy.step_definitions;
 
-import com.neuroventis.helpilepsy.pages.HomePage;
-import com.neuroventis.helpilepsy.pages.LoginPage;
-import com.neuroventis.helpilepsy.pages.TutorialPage;
-import com.neuroventis.helpilepsy.pages.WelcomePage;
+import com.neuroventis.helpilepsy.pages.*;
+import com.neuroventis.helpilepsy.utilities.ui.BrowserUtils;
 import com.neuroventis.helpilepsy.utilities.ui.ConfigurationReader;
 import com.neuroventis.helpilepsy.utilities.ui.Driver;
+import com.neuroventis.helpilepsy.utilities.ui.Pages;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class AddSeizureStepDefs {
+public class AddSeizureStepDefs extends BaseStep {
     WelcomePage welcomepage = new WelcomePage();
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
+    ManageSeizurePage manageSeizurePage = new ManageSeizurePage();
+
 
     @Given("User is on the login page")
     public void user_is_on_the_login_page() {
@@ -22,38 +23,86 @@ public class AddSeizureStepDefs {
         Driver.getDriver().get(URL);
         System.out.println("Open ::" + URL);
         new TutorialPage().navigateToWelcomePage();
-        Assert.assertEquals(welcomepage.getCurrentUrl(), "https://d2ziclbl1px5mc.cloudfront.net/#!/welcome");
-
+        Assert.assertEquals(pages.welcomePage().getCurrentUrl(), "https://d2ziclbl1px5mc.cloudfront.net/#!/welcome");
     }
 
     @Given("User logs in")
     public void user_logs_in() {
-        welcomepage.navigateToLoginPAge();
-        Assert.assertEquals(loginPage.getCurrentUrl(), "https://d2ziclbl1px5mc.cloudfront.net/#!/home?type=login");
-        loginPage.login();
-        loginPage.clickLoginButton();
+        pages.welcomePage().navigateToLoginPAge();
+        Assert.assertEquals(pages.loginPage().getCurrentUrl(), "https://d2ziclbl1px5mc.cloudfront.net/#!/home?type=login");
+        pages.loginPage().login();
+        pages.loginPage().clickLoginButton();
     }
 
     @Given("User navigates to Home page")
     public void user_navigates_to_page() {
-        homePage.waitUntilSpinnerDisappear();
-        //      BrowserUtils.wait(4); // Waits for the page to load.
-        Assert.assertEquals(homePage.getCurrentUrl(), "https://d2ziclbl1px5mc.cloudfront.net/#!/dashboard");
+        pages.homePage().waitUntilSpinnerDisappear();
+        Assert.assertEquals(pages.homePage().getCurrentUrl(), "https://d2ziclbl1px5mc.cloudfront.net/#!/dashboard");
     }
+
     @Given("User navigates to Manage Seizure page")
     public void user_navigates_to_Manage_Seizure_page() {
-        homePage.navigateToManageSeizurePage();
-        //Assert.assertEquals(ManageSeizurePage.getCurrentUrl(), "https://d2ziclbl1px5mc.cloudfront.net/#!/dashboard");
+        pages.homePage().navigateToManageSeizurePage();
+        Assert.assertEquals(pages.manageSeizurePage().getCurrentUrl(), "https://d2ziclbl1px5mc.cloudfront.net/#!/manageSeizure");
+    }
+    @Then("Add an event popup displayed")
+    public void add_an_event_popup_displayed() {
+        Assert.assertEquals(pages.manageSeizurePage().isAddEventPupopDisplayed(),true);
+    }
+
+    @When("User clicks add an event button")
+    public void user_clicks_add_an_event_button() {
+        pages.homePage().openAddAnEventPopup();
+    }
+
+
+
+    @When("User selects type of Seizure {string}")
+    public void user_selects_type_of_Seizure(String string) {
+        BrowserUtils.wait(2);
+        if(string.contains("Other")){
+            pages.manageSeizurePage().selectTypeOfSeizureOther(string);
+        }else {
+            pages.manageSeizurePage().selectTypeOfSeizure(string);
+        }
+    }
+
+
+    @When("User selects felt it coming {string}")
+    public void user_selects_felt_it_coming(String string) {
+        pages.manageSeizurePage().selectFeltItComingOption(string);
+    }
+
+
+    @When("User Save seizure")
+    public void user_Save_seizure() {
+        pages.manageSeizurePage().saveSeizure();
+    }
+
+    @Then("Seizure successfully added displayed true")
+    public void seizure_successfully_added_displayed_true() {
+        String expectedResult = "Seizure successfully added";
+        String actualResult = pages.manageSeizurePage().saveSeizureInfo();
+        Assert.assertTrue(expectedResult.equalsIgnoreCase(actualResult));
+    }
+
+
+    @When("User dont select type of Seizure")
+    public void user_dont_select_type_of_Seizure() {
+        pages.manageSeizurePage().selectTypeOfSeizureNull();
+
 
     }
 
-    @When("User clicks on {string} to display Add functionalities")
-    public void user_clicks_on_to_display_Add_functionalities(String string) {
-
+    @Then("Popup displays configurable massage Warning")
+    public void popup_displays_configurable_massage_Warning() {
+        Assert.assertEquals(pages.manageSeizurePage().isWarningPopupDisplayed(), true);
     }
 
-    @Then("Add functionalities displayed {string}")
-    public void add_functionalities_displayed(String string) {
 
-    }
+
+
+
+
+
 }
