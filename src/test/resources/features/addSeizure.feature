@@ -1,11 +1,12 @@
 @smoke
 Feature: Check the Add Seizure feature
+
   Background:
     Given User is on the login page
     And User logs in
     And User navigates to Home page
 
-    @login
+  @login
   Scenario: Login to Add Seizure functionality
     When User clicks add an event button
     Then Add an event popup displayed
@@ -18,30 +19,19 @@ Feature: Check the Add Seizure feature
     And User Save seizure
     Then Popup displays configurable massage Warning
 
-
-  @dataDriven
-  Scenario Outline: Adding Seizure
+  Scenario: Adding Seizure Focal aware seizure
     And User navigates to Manage Seizure page
-    When User selects type of Seizure "<Seizure Type>"
-    And User selects felt it coming "<Felt it coming Option>"
+    When User selects type of Seizure "Focal aware seizure"
+    And User selects felt it coming "Yes"
     And User Save seizure
     Then Seizure successfully added displayed true
 
-
-    Examples:
-      | Seizure Type                     | Felt it coming Option |
-      | Generalized absence seizure      | No                    |
-      | Focal aware seizure              | Yes                   |
-      | Generalized motor seizure        | Yes                   |
-      | Focal aware seizure              | No                    |
-      | Focal impaired awareness seizure | No                    |
-      | Other Myoclonic seizures         | Yes                   |
-
-
-
-
-
-
+  Scenario: Generalized motor seizure
+    And User navigates to Manage Seizure page
+    When User selects type of Seizure "Other Myoclonic seizures"
+    And User selects felt it coming "NO"
+    And User Save seizure
+    Then Seizure successfully added displayed true
 
 
 

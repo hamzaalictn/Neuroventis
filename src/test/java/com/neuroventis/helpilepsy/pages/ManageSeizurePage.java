@@ -41,8 +41,17 @@ public class ManageSeizurePage extends BasePage {
     @FindBy(xpath = "//button[@class='btn-helpilepsy green']")
     private WebElement saveSeizureButton;
 
+    @FindBy(xpath = "//span[text()='Delete Seizure']/parent::div")
+    private WebElement deleteSeizureButton;
+
+    @FindBy(xpath = "//span[text()='Confirm']/parent::div")
+    private WebElement deleteSeizureConfirmButton;
+
     @FindBy(xpath = "//div[text()='Seizure successfully added']")
     private WebElement saveSeizureInfo;
+
+    @FindBy(xpath = "(//button[text()='Ok'])[1]")
+    private WebElement  saveSeizureOKbutton;
 
     @FindBy(xpath = "//div[@ng-click='manageSeizureType()']")
     private WebElement selectTypeButton;
@@ -50,11 +59,24 @@ public class ManageSeizurePage extends BasePage {
     @FindBy(xpath = "//div[text()='Add an event']")
     private WebElement addAnEventText;
 
-    @FindBy(xpath = "(//span[text()='Warning'])[1]")
+    @FindBy(xpath = "//div[@class='modal-head error']")
     private WebElement warningPopupHeadline;
 
     @FindBy(xpath = "(//div[@class='close-button fa fa-times'])[1]")
     private WebElement selectTypeCloseButton;
+
+    @FindBy(xpath = "//span[text()='Define the duration']")
+    private WebElement defineTheDurationButton;
+
+    @FindBy(xpath = "(//input[@type='number'])[1]")
+    private WebElement defineTheDurationMinutesBox;
+
+    @FindBy(xpath = "(//input[@type='number'])[2]")
+    private WebElement defineTheDurationSecondsBox;
+
+    @FindBy(xpath = "(//div[text()='Validate'])[1]")
+    private WebElement defineTheDurationValidateButton;
+
 
 
 
@@ -106,8 +128,8 @@ public class ManageSeizurePage extends BasePage {
     }
 
 
-    public String saveSeizureInfo() {
-        return saveSeizureInfo.getText();
+    public boolean saveSeizureInfo() {
+        return saveSeizureInfo.isDisplayed();
     }
 
     public boolean isAddEventPupopDisplayed() {
@@ -118,12 +140,32 @@ public class ManageSeizurePage extends BasePage {
 
 
     public boolean isWarningPopupDisplayed() {
+        wait.until(ExpectedConditions.visibilityOf(warningPopupHeadline));
         return warningPopupHeadline.isDisplayed();
     }
 
     public void selectTypeOfSeizureNull() {
         selectTypeButton.click();
         selectTypeCloseButton.click();
+
+    }
+
+    public void endSaveSeizureProcess() {
+        saveSeizureOKbutton.click();
+    }
+
+    public void defineDurationTime(Integer int1, Integer int2) {
+        defineTheDurationButton.click();
+        defineTheDurationMinutesBox.sendKeys(int1+"");
+        defineTheDurationSecondsBox.sendKeys(int2+"");
+        defineTheDurationValidateButton.click();
+    }
+
+
+    public void deleteSeizure() {
+        deleteSeizureButton.click();
+        deleteSeizureConfirmButton.click();
+        BrowserUtils.wait(3);
 
     }
 }

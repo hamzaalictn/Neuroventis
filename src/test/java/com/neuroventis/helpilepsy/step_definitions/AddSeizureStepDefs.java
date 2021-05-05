@@ -1,27 +1,22 @@
 package com.neuroventis.helpilepsy.step_definitions;
 
-import com.neuroventis.helpilepsy.pages.*;
+import com.neuroventis.helpilepsy.pages.TutorialPage;
 import com.neuroventis.helpilepsy.utilities.ui.BrowserUtils;
 import com.neuroventis.helpilepsy.utilities.ui.ConfigurationReader;
 import com.neuroventis.helpilepsy.utilities.ui.Driver;
-import com.neuroventis.helpilepsy.utilities.ui.Pages;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class AddSeizureStepDefs extends BaseStep {
-    WelcomePage welcomepage = new WelcomePage();
-    LoginPage loginPage = new LoginPage();
-    HomePage homePage = new HomePage();
-    ManageSeizurePage manageSeizurePage = new ManageSeizurePage();
-
 
     @Given("User is on the login page")
     public void user_is_on_the_login_page() {
         String URL = ConfigurationReader.getProperty("url");
         Driver.getDriver().get(URL);
         System.out.println("Open ::" + URL);
+        BrowserUtils.wait(2);
         new TutorialPage().navigateToWelcomePage();
         Assert.assertEquals(pages.welcomePage().getCurrentUrl(), "https://d2ziclbl1px5mc.cloudfront.net/#!/welcome");
     }
@@ -37,6 +32,7 @@ public class AddSeizureStepDefs extends BaseStep {
     @Given("User navigates to Home page")
     public void user_navigates_to_page() {
         pages.homePage().waitUntilSpinnerDisappear();
+        BrowserUtils.wait(1);
         Assert.assertEquals(pages.homePage().getCurrentUrl(), "https://d2ziclbl1px5mc.cloudfront.net/#!/dashboard");
     }
 
@@ -45,9 +41,10 @@ public class AddSeizureStepDefs extends BaseStep {
         pages.homePage().navigateToManageSeizurePage();
         Assert.assertEquals(pages.manageSeizurePage().getCurrentUrl(), "https://d2ziclbl1px5mc.cloudfront.net/#!/manageSeizure");
     }
+
     @Then("Add an event popup displayed")
     public void add_an_event_popup_displayed() {
-        Assert.assertEquals(pages.manageSeizurePage().isAddEventPupopDisplayed(),true);
+        Assert.assertEquals(pages.manageSeizurePage().isAddEventPupopDisplayed(), true);
     }
 
     @When("User clicks add an event button")
@@ -56,13 +53,12 @@ public class AddSeizureStepDefs extends BaseStep {
     }
 
 
-
     @When("User selects type of Seizure {string}")
     public void user_selects_type_of_Seizure(String string) {
         BrowserUtils.wait(2);
-        if(string.contains("Other")){
+        if (string.contains("Other")) {
             pages.manageSeizurePage().selectTypeOfSeizureOther(string);
-        }else {
+        } else {
             pages.manageSeizurePage().selectTypeOfSeizure(string);
         }
     }
@@ -81,28 +77,28 @@ public class AddSeizureStepDefs extends BaseStep {
 
     @Then("Seizure successfully added displayed true")
     public void seizure_successfully_added_displayed_true() {
-        String expectedResult = "Seizure successfully added";
-        String actualResult = pages.manageSeizurePage().saveSeizureInfo();
-        Assert.assertTrue(expectedResult.equalsIgnoreCase(actualResult));
+        Assert.assertTrue(pages.manageSeizurePage().saveSeizureInfo());
+        pages.manageSeizurePage().endSaveSeizureProcess();
+    }
+
+
+
+    @Given("Seizure successfully added displayed true for editting")
+    public void seizure_successfully_added_displayed_true_for_editting() {
+        Assert.assertTrue(pages.manageSeizurePage().saveSeizureInfo());
+        pages.manageSeizurePage().endSaveSeizureProcess();
+        Assert.assertTrue(pages.homePage().getCurrentUrl().equalsIgnoreCase("https://d2ziclbl1px5mc.cloudfront.net/#!/dashboard"));
     }
 
 
     @When("User dont select type of Seizure")
     public void user_dont_select_type_of_Seizure() {
         pages.manageSeizurePage().selectTypeOfSeizureNull();
-
-
     }
 
     @Then("Popup displays configurable massage Warning")
     public void popup_displays_configurable_massage_Warning() {
         Assert.assertEquals(pages.manageSeizurePage().isWarningPopupDisplayed(), true);
     }
-
-
-
-
-
-
 
 }

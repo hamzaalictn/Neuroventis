@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5108682000,
+              "duration": 6082713000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "User is on the login page",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 487147000,
+              "duration": 484115000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User logs in",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
@@ -35,10 +35,10 @@
           },
           {
             "result": {
-              "duration": 2681062000,
+              "duration": 2610211000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User navigates to Home page",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
@@ -48,11 +48,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-05T06:00:00.297Z",
+        "start_timestamp": "2021-05-05T10:42:52.969Z",
         "before": [
           {
             "result": {
-              "duration": 2463165000,
+              "duration": 2042014000,
               "status": "passed"
             },
             "match": {
@@ -60,14 +60,962 @@
             }
           }
         ],
-        "line": 9,
-        "name": "Login to Add Seizure functionality",
+        "line": 19,
+        "name": "Adding Seizures",
         "description": "",
-        "id": "check-the-add-seizure-feature;login-to-add-seizure-functionality",
+        "id": "check-the-add-seizure-feature;adding-seizures;;2",
         "after": [
           {
             "result": {
-              "duration": 96553000,
+              "duration": 95786000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 184148000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigates to Manage Seizure page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2119034000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects type of Seizure \"Generalized absence seizure\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Generalized absence seizure\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 424005000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User selects felt it coming \"No\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38851000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Save seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 265884000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Seizure successfully added displayed true",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dataDriven"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6092217000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 460193000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2639426000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to Home page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:43:07.382Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1639235000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Adding Seizures",
+        "description": "",
+        "id": "check-the-add-seizure-feature;adding-seizures;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 91357000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 185812000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigates to Manage Seizure page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2119668000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects type of Seizure \"Focal aware seizure\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Focal aware seizure\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 410203000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User selects felt it coming \"Yes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yes\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37176000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Save seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 229713000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Seizure successfully added displayed true",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dataDriven"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6122184000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 437617000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2584653000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to Home page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:43:21.311Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1502648000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Adding Seizures",
+        "description": "",
+        "id": "check-the-add-seizure-feature;adding-seizures;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 95842000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 181870000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigates to Manage Seizure page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2121616000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects type of Seizure \"Generalized motor seizure\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Generalized motor seizure\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 413757000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User selects felt it coming \"Yes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yes\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42475000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Save seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 230022000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Seizure successfully added displayed true",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dataDriven"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6052963000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 424121000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2567561000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to Home page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:43:35.054Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1341630000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Adding Seizures",
+        "description": "",
+        "id": "check-the-add-seizure-feature;adding-seizures;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 88537000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 193548000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigates to Manage Seizure page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2112585000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects type of Seizure \"Focal aware seizure\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Focal aware seizure\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 416019000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User selects felt it coming \"Yes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yes\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51250000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Save seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214100000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Seizure successfully added displayed true",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dataDriven"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6080232000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 421168000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2571323000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to Home page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:43:48.525Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1593440000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Adding Seizures",
+        "description": "",
+        "id": "check-the-add-seizure-feature;adding-seizures;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 95696000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 191253000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigates to Manage Seizure page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2105609000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects type of Seizure \"Focal impaired awareness seizure\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Focal impaired awareness seizure\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 464495000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User selects felt it coming \"No\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73957000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Save seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 684141000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Seizure successfully added displayed true",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dataDriven"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6109181000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 461877000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2578043000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to Home page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:44:02.815Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1666114000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Adding Seizures",
+        "description": "",
+        "id": "check-the-add-seizure-feature;adding-seizures;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 92552000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 185321000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigates to Manage Seizure page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2333001000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects type of Seizure \"Other Myoclonic seizures\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Other Myoclonic seizures\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 372546000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User selects felt it coming \"Yes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yes\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47097000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Save seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 231780000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Seizure successfully added displayed true",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dataDriven"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6116659000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 439588000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2590006000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to Home page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:44:16.902Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1502745000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "User edits existing Seizure data",
+        "description": "",
+        "id": "check-the-add-seizure-feature;user-edits-existing-seizure-data",
+        "after": [
+          {
+            "result": {
+              "duration": 91361000,
               "status": "passed"
             },
             "match": {
@@ -80,10 +1028,151 @@
         "steps": [
           {
             "result": {
-              "duration": 91428000,
+              "duration": 1840019000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 28,
+            "name": "User navigates to Journal and select existing first existing Seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_navigates_to_Journal_and_select_existing_first_existing_Seizure()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89563000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User deletes first existing Seizure until all Seizure deleted",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_deletes_first_existing_Seizure_until_all_Seizure_deleted()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dataDriven"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@deleteAllAddedSeizure"
+          }
+        ]
+      }
+    ],
+    "name": "Check the Add Seizure feature",
+    "description": "",
+    "id": "check-the-add-seizure-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DataDrivenAddSeizure.feature",
+    "tags": [
+      {
+        "name": "@dataDriven",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6089549000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 343733000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2087388000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to Home page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:44:29.586Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1604580000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Login to Add Seizure functionality",
+        "description": "",
+        "id": "check-the-add-seizure-feature;login-to-add-seizure-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 85563000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 55699000,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "User clicks add an event button",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_clicks_add_an_event_button()"
@@ -92,10 +1181,10 @@
           },
           {
             "result": {
-              "duration": 71943000,
+              "duration": 33370000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "Add an event popup displayed",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.add_an_event_popup_displayed()"
@@ -113,7 +1202,7 @@
         ]
       },
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -121,10 +1210,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4739328000,
+              "duration": 6017067000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "User is on the login page",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
@@ -133,10 +1222,10 @@
           },
           {
             "result": {
-              "duration": 476927000,
+              "duration": 481087000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User logs in",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
@@ -145,10 +1234,10 @@
           },
           {
             "result": {
-              "duration": 2693005000,
+              "duration": 2569715000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User navigates to Home page",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
@@ -158,11 +1247,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-05T06:00:11.353Z",
+        "start_timestamp": "2021-05-05T10:44:39.901Z",
         "before": [
           {
             "result": {
-              "duration": 1434237000,
+              "duration": 1487472000,
               "status": "passed"
             },
             "match": {
@@ -170,14 +1259,14 @@
             }
           }
         ],
-        "line": 14,
+        "line": 15,
         "name": "Warning pupop test",
         "description": "",
         "id": "check-the-add-seizure-feature;warning-pupop-test",
         "after": [
           {
             "result": {
-              "duration": 91992000,
+              "duration": 99063000,
               "status": "passed"
             },
             "match": {
@@ -190,10 +1279,10 @@
         "steps": [
           {
             "result": {
-              "duration": 214571000,
+              "duration": 154848000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 16,
             "name": "User navigates to Manage Seizure page",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
@@ -202,10 +1291,10 @@
           },
           {
             "result": {
-              "duration": 452394000,
+              "duration": 89298000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 17,
             "name": "User dont select type of Seizure",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_dont_select_type_of_Seizure()"
@@ -214,10 +1303,10 @@
           },
           {
             "result": {
-              "duration": 460670000,
+              "duration": 38794000,
               "status": "passed"
             },
-            "line": 17,
+            "line": 18,
             "name": "User selects felt it coming \"Yes\"",
             "match": {
               "arguments": [
@@ -232,10 +1321,10 @@
           },
           {
             "result": {
-              "duration": 37934000,
+              "duration": 36092000,
               "status": "passed"
             },
-            "line": 18,
+            "line": 19,
             "name": "User Save seizure",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
@@ -244,10 +1333,10 @@
           },
           {
             "result": {
-              "duration": 25159000,
+              "duration": 34547000,
               "status": "passed"
             },
-            "line": 19,
+            "line": 20,
             "name": "Popup displays configurable massage Warning",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.popup_displays_configurable_massage_Warning()"
@@ -265,7 +1354,7 @@
         ]
       },
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -273,10 +1362,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4530009000,
+              "duration": 6104079000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "User is on the login page",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
@@ -285,10 +1374,10 @@
           },
           {
             "result": {
-              "duration": 331343000,
+              "duration": 538757000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User logs in",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
@@ -297,10 +1386,10 @@
           },
           {
             "result": {
-              "duration": 2698779000,
+              "duration": 2566181000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User navigates to Home page",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
@@ -310,11 +1399,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-05T06:00:21.989Z",
+        "start_timestamp": "2021-05-05T10:44:50.916Z",
         "before": [
           {
             "result": {
-              "duration": 1601155000,
+              "duration": 1455749000,
               "status": "passed"
             },
             "match": {
@@ -322,14 +1411,14 @@
             }
           }
         ],
-        "line": 33,
-        "name": "Adding Seizure",
+        "line": 22,
+        "name": "Adding Seizure Focal aware seizure",
         "description": "",
-        "id": "check-the-add-seizure-feature;adding-seizure;;2",
+        "id": "check-the-add-seizure-feature;adding-seizure-focal-aware-seizure",
         "after": [
           {
             "result": {
-              "duration": 85700000,
+              "duration": 91272000,
               "status": "passed"
             },
             "match": {
@@ -338,14 +1427,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 160015000,
+              "duration": 173351000,
               "status": "passed"
             },
-            "line": 24,
+            "line": 23,
             "name": "User navigates to Manage Seizure page",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
@@ -354,168 +1443,10 @@
           },
           {
             "result": {
-              "duration": 2102556000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User selects type of Seizure \"Generalized absence seizure\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Generalized absence seizure\"",
-                  "offset": 29
-                }
-              ],
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 51413000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User selects felt it coming \"No\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"No\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34858000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User Save seizure",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 400617000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Seizure successfully added displayed true",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@dataDriven"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4265177000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is on the login page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 343017000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User logs in",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1083631000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User navigates to Home page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-05T06:00:33.996Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1366135000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 34,
-        "name": "Adding Seizure",
-        "description": "",
-        "id": "check-the-add-seizure-feature;adding-seizure;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 83282000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 180001000,
+              "duration": 2133013000,
               "status": "passed"
             },
             "line": 24,
-            "name": "User navigates to Manage Seizure page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2106844000,
-              "status": "passed"
-            },
-            "line": 25,
             "name": "User selects type of Seizure \"Focal aware seizure\"",
             "match": {
               "arguments": [
@@ -530,10 +1461,10 @@
           },
           {
             "result": {
-              "duration": 57497000,
+              "duration": 424632000,
               "status": "passed"
             },
-            "line": 26,
+            "line": 25,
             "name": "User selects felt it coming \"Yes\"",
             "match": {
               "arguments": [
@@ -548,168 +1479,10 @@
           },
           {
             "result": {
-              "duration": 57184000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User Save seizure",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 187157000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Seizure successfully added displayed true",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@dataDriven"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4569102000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is on the login page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 330376000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User logs in",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1082818000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User navigates to Home page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-05T06:00:43.732Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1378428000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 35,
-        "name": "Adding Seizure",
-        "description": "",
-        "id": "check-the-add-seizure-feature;adding-seizure;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 86366000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 157975000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User navigates to Manage Seizure page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2103275000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User selects type of Seizure \"Generalized motor seizure\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Generalized motor seizure\"",
-                  "offset": 29
-                }
-              ],
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 36809000,
+              "duration": 48683000,
               "status": "passed"
             },
             "line": 26,
-            "name": "User selects felt it coming \"Yes\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Yes\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 60788000,
-              "status": "passed"
-            },
-            "line": 27,
             "name": "User Save seizure",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
@@ -718,10 +1491,10 @@
           },
           {
             "result": {
-              "duration": 167422000,
+              "duration": 235900000,
               "status": "passed"
             },
-            "line": 28,
+            "line": 27,
             "name": "Seizure successfully added displayed true",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
@@ -732,14 +1505,11 @@
         "tags": [
           {
             "name": "@smoke"
-          },
-          {
-            "name": "@dataDriven"
           }
         ]
       },
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -747,10 +1517,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4530562000,
+              "duration": 6019364000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "User is on the login page",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
@@ -759,10 +1529,10 @@
           },
           {
             "result": {
-              "duration": 342048000,
+              "duration": 434855000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User logs in",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
@@ -771,10 +1541,10 @@
           },
           {
             "result": {
-              "duration": 1081735000,
+              "duration": 2599643000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User navigates to Home page",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
@@ -784,11 +1554,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-05T06:00:53.713Z",
+        "start_timestamp": "2021-05-05T10:45:04.695Z",
         "before": [
           {
             "result": {
-              "duration": 1499319000,
+              "duration": 1481652000,
               "status": "passed"
             },
             "match": {
@@ -796,14 +1566,14 @@
             }
           }
         ],
-        "line": 36,
-        "name": "Adding Seizure",
+        "line": 29,
+        "name": "Generalized motor seizure",
         "description": "",
-        "id": "check-the-add-seizure-feature;adding-seizure;;5",
+        "id": "check-the-add-seizure-feature;generalized-motor-seizure",
         "after": [
           {
             "result": {
-              "duration": 81511000,
+              "duration": 97124000,
               "status": "passed"
             },
             "match": {
@@ -812,14 +1582,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 165492000,
+              "duration": 199820000,
               "status": "passed"
             },
-            "line": 24,
+            "line": 30,
             "name": "User navigates to Manage Seizure page",
             "match": {
               "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
@@ -828,326 +1598,10 @@
           },
           {
             "result": {
-              "duration": 2103611000,
+              "duration": 2302300000,
               "status": "passed"
             },
-            "line": 25,
-            "name": "User selects type of Seizure \"Focal aware seizure\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Focal aware seizure\"",
-                  "offset": 29
-                }
-              ],
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 39316000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User selects felt it coming \"No\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"No\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 62486000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User Save seizure",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 163435000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Seizure successfully added displayed true",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@dataDriven"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4890384000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is on the login page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 324353000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User logs in",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1082412000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User navigates to Home page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-05T06:01:03.808Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1378175000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 37,
-        "name": "Adding Seizure",
-        "description": "",
-        "id": "check-the-add-seizure-feature;adding-seizure;;6",
-        "after": [
-          {
-            "result": {
-              "duration": 95123000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 141519000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User navigates to Manage Seizure page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2102615000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User selects type of Seizure \"Focal impaired awareness seizure\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Focal impaired awareness seizure\"",
-                  "offset": 29
-                }
-              ],
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 37431000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User selects felt it coming \"No\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"No\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 52780000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User Save seizure",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 171122000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Seizure successfully added displayed true",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@dataDriven"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4697212000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is on the login page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 319224000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User logs in",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1639015000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User navigates to Home page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-05T06:01:14.089Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1481157000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 38,
-        "name": "Adding Seizure",
-        "description": "",
-        "id": "check-the-add-seizure-feature;adding-seizure;;7",
-        "after": [
-          {
-            "result": {
-              "duration": 88804000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 147684000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User navigates to Manage Seizure page",
-            "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2219476000,
-              "status": "passed"
-            },
-            "line": 25,
+            "line": 31,
             "name": "User selects type of Seizure \"Other Myoclonic seizures\"",
             "match": {
               "arguments": [
@@ -1162,10 +1616,239 @@
           },
           {
             "result": {
-              "duration": 64112000,
+              "duration": 374105000,
               "status": "passed"
             },
-            "line": 26,
+            "line": 32,
+            "name": "User selects felt it coming \"NO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NO\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37052000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User Save seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 225781000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Seizure successfully added displayed true",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Check the Add Seizure feature",
+    "description": "",
+    "id": "check-the-add-seizure-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/addSeizure.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5979823000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 451346000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User logs in",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2656408000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Home page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:45:18.485Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1250499000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User edits existing Seizure data",
+        "description": "",
+        "id": "check-the-edit-seizure-feature;user-edits-existing-seizure-data",
+        "after": [
+          {
+            "result": {
+              "duration": 92689000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 190776000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User navigates to Manage Seizure page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_Manage_Seizure_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2122035000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User selects type of Seizure \"Generalized absence seizure\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Generalized absence seizure\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_type_of_Seizure(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 442497000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects felt it coming \"No\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_selects_felt_it_coming(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38665000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Save seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233076000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Seizure successfully added displayed true",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1939313000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User navigates to Journal and select existing first existing Seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_navigates_to_Journal_and_select_existing_first_existing_Seizure()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 216644000,
+              "status": "passed"
+            },
+            "line": 15,
             "name": "User selects felt it coming \"Yes\"",
             "match": {
               "arguments": [
@@ -1180,25 +1863,35 @@
           },
           {
             "result": {
-              "duration": 33593000,
+              "duration": 236742000,
               "status": "passed"
             },
-            "line": 27,
-            "name": "User Save seizure",
+            "line": 16,
+            "name": "User defines the duration as 1 minute and 30 seconds",
             "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_Save_seizure()"
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 29
+                },
+                {
+                  "val": "30",
+                  "offset": 42
+                }
+              ],
+              "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_defines_the_duration_as_minute_and_seconds(java.lang.Integer,java.lang.Integer)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 127077000,
+              "duration": 389796000,
               "status": "passed"
             },
-            "line": 28,
-            "name": "Seizure successfully added displayed true",
+            "line": 17,
+            "name": "User saves changes and should be recorded",
             "match": {
-              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.seizure_successfully_added_displayed_true()"
+              "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_saves_changes_and_should_be_recorded()"
             },
             "keyword": "Then "
           }
@@ -1206,18 +1899,229 @@
         "tags": [
           {
             "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6087704000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@dataDriven"
+            "result": {
+              "duration": 440193000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User logs in",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2555118000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Home page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:45:34.748Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1552001000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User edits existing Seizure data",
+        "description": "",
+        "id": "check-the-edit-seizure-feature;user-edits-existing-seizure-data",
+        "after": [
+          {
+            "result": {
+              "duration": 93848000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1839126000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User navigates to Journal and select existing first existing Seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_navigates_to_Journal_and_select_existing_first_existing_Seizure()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3189468000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User deletes first existing Seizure",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_deletes_first_existing_Seizure()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7039290000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 433488000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User logs in",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2557124000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Home page",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.AddSeizureStepDefs.user_navigates_to_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:45:50.512Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1444902000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "User deletes existing seizure",
+        "description": "",
+        "id": "check-the-edit-seizure-feature;user-deletes-existing-seizure",
+        "after": [
+          {
+            "result": {
+              "duration": 92653000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13362000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User navigates to Journal and delete existing seizures",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_navigates_to_Journal_and_delete_existing_seizures()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 517000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User move to HomePage",
+            "match": {
+              "location": "com.neuroventis.helpilepsy.step_definitions.EditSeizureStepDefs.user_move_to_HomePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
           }
         ]
       }
     ],
-    "name": "Check the Add Seizure feature",
+    "name": "Check the Edit Seizure feature",
     "description": "",
-    "id": "check-the-add-seizure-feature",
+    "id": "check-the-edit-seizure-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/addSeizure.feature",
+    "uri": "file:src/test/resources/features/editSeizure.feature",
     "tags": [
       {
         "name": "@smoke",

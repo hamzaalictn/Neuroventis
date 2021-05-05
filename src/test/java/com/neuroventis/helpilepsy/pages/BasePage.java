@@ -52,11 +52,12 @@ public abstract class  BasePage {
         secondInfoButton.click(); // Check the second information button of the tutorial
         BrowserUtils.wait(1);
         thirdInfoButton.click();  // Check the third information button of the tutorial
-        String loginLocator =letsgoButton.toString();
+        BrowserUtils.wait(1);
         letsgoButton.click();
     }
 
     public void waitUntilSpinnerDisappear(){
+        BrowserUtils.wait(1);
         wait.until(ExpectedConditions.invisibilityOf(spinner));
     }
 

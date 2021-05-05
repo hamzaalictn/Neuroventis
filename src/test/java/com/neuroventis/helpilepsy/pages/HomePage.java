@@ -1,7 +1,9 @@
 package com.neuroventis.helpilepsy.pages;
 
+import com.neuroventis.helpilepsy.utilities.ui.BrowserUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class HomePage extends BasePage{
 
@@ -48,5 +50,11 @@ public class HomePage extends BasePage{
 
     public void openAddAnEventPopup() {
         addEventButton.click();
+    }
+
+    public void navigateToJournalPage() {
+        BrowserUtils.wait(1);
+        wait.until(ExpectedConditions.elementToBeClickable(JournalButton));
+        JournalButton.click();
     }
 }

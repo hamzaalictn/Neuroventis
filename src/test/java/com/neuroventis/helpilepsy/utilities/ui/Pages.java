@@ -7,13 +7,14 @@ public class Pages {
     private LoginPage loginPage;
     private WelcomePage welcomepage;
     private ManageSeizurePage manageSeizurePage;
+    private JournalPage journalPage;
 
     public Pages() {
         this.homePage = new HomePage();
         this.loginPage = new LoginPage();
         this.welcomepage = new WelcomePage();
         this.manageSeizurePage = new ManageSeizurePage();
-
+        this.journalPage = new JournalPage();
     }
 
     public HomePage homePage() {
@@ -28,14 +29,10 @@ public class Pages {
     public ManageSeizurePage manageSeizurePage(){
         return manageSeizurePage;
     }
+    public JournalPage journalPage() {
+        return journalPage;
+    }
 }
 
-/*
-    WelcomePage welcomepage = new WelcomePage();
-    LoginPage loginPage = new LoginPage();
-    HomePage homePage = new HomePage();
-    ManageSeizurePage manageSeizurePage = new ManageSeizurePage();
-
-*/
 
 
